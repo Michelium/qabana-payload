@@ -67,7 +67,6 @@ export const Content: Block = {
     {
       type: "richText",
       name: "content",
-      localized: true,
       admin: {
         elements: ["ol", "ul", "indent", "relationship", "upload"],
         leaves: [],

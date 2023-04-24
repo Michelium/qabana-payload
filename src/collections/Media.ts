@@ -5,7 +5,6 @@ export const Media: CollectionConfig = {
   slug: "media",
   admin: {
     useAsTitle: "filename",
-    group: "Content",
   },
   upload: {
     adminThumbnail: "thumbnail",
@@ -34,7 +33,6 @@ export const Media: CollectionConfig = {
       name: "alt",
       type: "text",
       label: "Alt Text",
-      localized: true,
       required: true,
     },
   ],

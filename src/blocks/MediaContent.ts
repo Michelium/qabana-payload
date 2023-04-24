@@ -34,7 +34,6 @@ export const MediaContent: Block = {
     {
       type: "richText",
       name: "text",
-      localized: true,
       admin: {
         elements: ["h2", "h3", "h4", "h5", "link"],
         leaves: [],

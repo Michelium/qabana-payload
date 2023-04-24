@@ -18,13 +18,11 @@ export const Pages: CollectionConfig = {
     {
       name: "title",
       type: "text",
-      localized: true,
       required: true,
     },
     {
       type: "richText",
       name: "intro",
-      localized: true,
       admin: {
         elements: ["h2", "h3", "link"],
         leaves: [],
@@ -34,9 +32,17 @@ export const Pages: CollectionConfig = {
       name: "body",
       type: "blocks",
       minRows: 1,
-      localized: true,
       blocks: [Content, List, Media, MediaContent],
     },
     slug(),
+    {
+      type: "checkbox",
+      name: "mainPage",
+      label: "Is website main page",
+      admin: {
+        position: "sidebar",
+      },
+      defaultValue: false,
+    },
   ],
 };

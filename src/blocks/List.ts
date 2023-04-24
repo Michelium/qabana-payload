@@ -15,7 +15,6 @@ export const List: Block = {
         singular: "Item",
         plural: "Items",
       },
-      localized: true,
       fields: [
         {
           type: "row",
@@ -32,6 +31,19 @@ export const List: Block = {
               name: "leftLink",
               type: "relationship",
               relationTo: ["pages"],
+              admin: {
+                width: "50%",
+              },
+            },
+          ],
+        },
+        {
+          type: "row",
+          fields: [
+            {
+              type: "text",
+              name: "leftSubText",
+              required: false,
               admin: {
                 width: "50%",
               },
